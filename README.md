@@ -1,7 +1,6 @@
-undrain and drain modelは微動の潮汐変調(phase difference, tidal sensitivity)をシミュレートするコードです。
-それぞれのfolderにあるnumericalcalculationはdrain/undrain modelを数値的に解いたコードです。
-それらのモデルは1自由度バネブロックモデルです。
-このモデルはslip lawを用いた状態依存摩擦則によって支配されています。
-加えて、shear zoneで生じるdilatancy/compactionを考慮しました。
-本モデルは準静的運動方程式を仮定しました。
-approximateexpressionはdrain/undrain modelにおけるphase differenceとtidal sensitivityを近似式から導出するコードです。
+undrain and drain model is a code that simulates tidal modulation of tremor (phase difference, tidal sensitivity).
+numericalcalculation is a code that solves drain/undrain model numerically.
+Our models are one-degree-of-freedom spring-slider model and governed by rate-and-state friction law using slip law.
+In addition, we intorduce dilatancy/compaciton in shear zone to our models.
+we assume that Our models follow quasi-static equation of motion.
+approximateexpression is the code for the approximate solution for the response of the block to tidal stress
