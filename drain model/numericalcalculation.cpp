@@ -104,9 +104,9 @@ double SOR(double *nextP,double *P,int Z,double sita,double Vd,double *k1,double
 		for(Z=1;Z<Np1-1;Z++){
 			P[Z] = nextP[Z];
 		}
-				P[0] = P[2] - 2*E_p*Vd*log(Vd*sita)*c*dzd;
-			k1[2]=P[1];
-			difP1[0]=(P[1]-pasP[0])/dtd; //pore fluid pressure change
+				P[0] = P[2] - 2*E_p*Vd*log(Vd*sita)*c*dzd;//ghost variable P[0]
+			k1[2]=P[1]; // pore fluid pressure change
+			difP1[0]=(P[1]-pasP[0])/dtd; //pore fluid pressure change in shear zone
 	return 0;
 }
 
